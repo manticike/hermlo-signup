@@ -1,4 +1,5 @@
 const phoneInput = document.querySelectorAll(".phone");
+document.querySelector('#current-year').textContent = new Date().getFullYear();
 
 phoneInput.forEach(input => {
   window.intlTelInput(input, {

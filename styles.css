@@ -29,7 +29,7 @@ a {
   color: inherit;
 }
 
-header img {
+header img, footer img {
   max-width: 87px;
   height: 24px;
 }
@@ -65,4 +65,49 @@ header img {
 .nav-menu a:active {
   color: #000000;
   background-color: aliceblue;
+}
+
+.hero-image img {
+ height: 50%;
+ overflow: hidden;
+}
+
+.hero-section {
+  display: grid;
+  border: 2px solid black;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  
+}
+
+/* Footer styles*/
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.acloe-socials {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 20px;
+}
+
+#custom-line {
+  border: none;
+  height: 1px;
+  background-color: #D3D3D3;
+  width: 100%;
+  margin: 20px auto;
 }
