@@ -141,7 +141,7 @@ label {
   margin-bottom: 5px;
 }
 
-input, textarea, select {
+input, textarea, select, .terms-container {
   /* width: 100%; */
   font-size: 1rem;
   margin-bottom: 10px;
@@ -151,6 +151,10 @@ input, textarea, select {
   padding: 10px;
   background-color: #fff;
   box-sizing: border-box;
+}
+
+.terms-container > p {
+  font-size: 1rem;
 }
 
 .social-media-field > input {
