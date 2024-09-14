@@ -126,6 +126,11 @@ header img, footer img {
   }
 }
 
+/*The following section tackles the hero section with the image and a little text*/
+
+
+
+
 /* The following styles will apply to form fields*/
 .form-container {
   margin-top: 40px;
@@ -136,22 +141,7 @@ header img, footer img {
   background-color: #fff;
 }
 
-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  /* display: block; */
-  margin-bottom: 5px;
-  font-weight: bold;
-}
 
 input, textarea, select, .terms-container {
   /* width: 100%; */
@@ -165,28 +155,30 @@ input, textarea, select, .terms-container {
   box-sizing: border-box;
 }
 
-.terms-container {
-  grid-column: span 2;
-  display: flex;
-  align-items: flex-start;
+label {
+  display: block;
 }
 
-#message-paragraph {
-  margin-top: 0;
+.terms-container {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 0;
+}
+
+#terms-and-conditions {
   font-size: 12px;
-  color: #9e9d9d;
+  margin-top: 0;
+  color: #4d4d4d;
 }
 
 #user-agreement-heading {
-  font-size: 12px;
+  font-size: 14px;
 }
 
-/* User agreement checkbox*/
-#user-agreement {
-  box-shadow: none; /*removes the box shadow on the checkbox*/
-  display: flex;
-  align-items: center;
+#user-agreement-checkbox {
+  margin-top: 10px;
 }
+
 
 .social-media-field > input {
   padding-left: 40px;
@@ -237,7 +229,8 @@ svg.icon {
     gap: 10px;
   }
 
-  .form-group input, .form-group textarea, .form-group select {
+  .form-group {
+    grid-column: span 1;
     width: 100%;
   }
 }

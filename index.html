@@ -38,7 +38,9 @@
           </p>
         </div>
         <div class="hero-image">
-          <img src="images/image.png" alt="an african business woman">
+          <div class="image-container">
+            <img src="images/image.png" alt="an african business woman">
+          </div>
         </div> 
       </section>
       <div class="form-container">
@@ -118,10 +120,12 @@
           </div>
         </div>  
           <div class="form-group terms-container">
-            <input type="checkbox" id="user-agreement" name="terms_and_agreement">
+            <div>
+            <input type="checkbox" id="user-agreement-checkbox" name="terms_and_agreement">
+           </div>
             <div class="agreement-message">
             <label for="user_agreement" id="user-agreement-heading">Agree to terms and conditions</label>
-            <p id="message-paragraph">We will use the information provided to contact you and process your request.</p>
+            <p id="terms-and-conditions">We will use the information provided to contact you and process your request.</p>
             </div>
           </div>
             <button type="submit" id="submit-button">Submit</button>
