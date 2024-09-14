@@ -28,5 +28,4 @@ hamburgerMenu.addEventListener('click', function() {
 closeBtn.addEventListener('click', () => {
   navMenu.classList.remove('active');
   closeBtn.style.display = none; // Hide close button
-  hamburgerMenu.style.display = 'block'; //
 });

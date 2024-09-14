@@ -67,9 +67,11 @@ header img, footer img {
   background-color: aliceblue;
 }
 
+/* Styling the hamburger icon*/
 .hamburger {
   display: none;
   font-size: 24px;
+  background: none;
   border: none;
   cursor: pointer;
 }
@@ -122,6 +124,54 @@ header img, footer img {
     position: relative;
     z-index: 10000;
   }
+}
+
+/* The following styles will apply to form fields*/
+.form-container {
+  margin-top: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  /* width: 100%; */
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.social-media-field > input {
+  padding-left: 40px;
+}
+
+/* Styling the social media icons and input fields*/
+.social-media-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* The following style tries to place the icons inside 
+ * input field*/
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* This will prevent the icon from blocking clicks on the input*/
 }
 
 /* Footer styles*/
